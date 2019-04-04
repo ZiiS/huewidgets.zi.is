@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "is.zi.huewidgets",
+    "sha256_cert_fingerprints":
+    ["F4:A5:4F:F2:56:13:19:F7:20:D1:74:A3:80:36:10:57:26:97:92:31:CF:8B:9A:25:69:E4:9D:48:8E:96:8F:D3"]
+  }
+}]

@@ -1,0 +1,41 @@
+_model: page
+---
+title: Instructions
+---
+body:
+
+### Selecting a control method
+
+If your launcher/home screen supports 'Shortcuts' then the easiest method is to open the Hue Widgets App and press the ![Add](add_circle.svg) button. If you launcher only supports 'Widgets' then it will provide a method for creating them. Often started by long-pressing on an empty area of your home screen. At the moment all shortcuts and widgets share the same icon, we will work to improve this.
+
+If you are using Android Nougat (7) or above; you will also have a Quick Settings Tile accessible by pulling down the system menu and selecting ![](edit.svg) edit, then dragging the Hue Widgets icon to the top. This can only toggle one light/group on and off but is accessible whilst you phone is locked.
+
+### Pairing
+
+The first time you use one of the methods above it will start searching for a new ![](devicesBridgesV2.svg) Philips Hue bridge. To authorize the app to control your lights you need to push the physical button:
+
+![Press](press.svg#center)
+
+This pairing is stored as an Android account you can manage via the system ![](settings_applications.svg)  Settings, ![](account_box.svg) Accounts.
+
+### Lights and Groups
+
+You will then be presented with a list of all the lights and groups from your hub, select the one you want to control. At the moment this App cannot rename lights or setup groups; the first-party [Philips Hue](https://play.google.com/store/apps/details?id=com.philips.lighting.hue2) is good at that.
+
+### Chromaticity and Luminance
+
+Philips chose the CIE 1931 xyY color space, which is a great match for lighting. Allowing to represent all colors an average person can perceive in a device independent way. When controlling lights they report the gamut of colors they can reproduce so we only render that portion of the chromaticity diagram. At the moment we render the full diagram for groups (as the individual lights can have different gamuts) with each light picking the closest color it can reproduce. 
+
+![Chromaticity Diagram](chromaticity.jpg#center)
+
+The gamut of the Hue lights probably extends a bit beyond your screen with more subtle blue-purples. We are also working within the confines of the calibration of the screen; but the color you pick and the color you get should be as close as possible. Note this example is from a older 'B' generation bulb with their limited greens.
+
+The brightness or luminance of the bulbs is not standardized, nor should it be as it varies with distance and direction, and the human eye adapts anyway. You just select the minimum to maximum light output for a given bulb.
+
+![Luminance](luminance.jpg#center)
+
+To control the light simply tap on the diagram for the color and brightness you chose. To turn the light off select the minimum brightness. When you are done tap elsewhere on the screen to close.
+
+### Suggestions
+
+If you have any issues or suggestions please use [Github](https://github.com/ZiiS/HueWidgets) or [email](mailto:support@Zi.iS).

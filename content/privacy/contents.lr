@@ -1,0 +1,19 @@
+_model: page
+---
+title: Privacy
+---
+body:
+
+We only collect the information you choose to give us, and we process it with your consent. We will never share this information with third parties unless required do to so under law.
+
+We aim to collect the minimum information, in the most secure manor, and hold it for the shortest time necessary. We welcome bug reports if you feel anything we do exceeds this.
+
+This website collects server logs which may include your IP address for security and fault diagnostics. It dose not set cookies or other tracking technology, will never use fingerprinting, dose not include any third party scripts, tracking or advertising. This website is only available over HTTPS.
+
+Our email servers store the mail we send and receive, including the headers showing its source.
+
+The “Hue Widgets” Android App dose not include any telemetries or tracking. It communicates with the Hue hub over HTTPS using “Trust On First Use” certificates (the best security the hub can provide). It stores your credentials in Android’s built in account system.
+
+We distribute the App via Google’s Play Store. Please also review their privacy [policy](https://policies.google.com/privacy). Google do track your activity in the play store and provide us with reports to help us ensure we are reaching the right audience. Alternatively we also distribute the App via F-Droid with a much stronger [policy](https://f-droid.org/en/about/#terms-etc). We also distribute the source via Github under their [policy](https://help.github.com/en/articles/github-privacy-statement). Please contact us if you would like us to send you the App and/or source via another service.
+
+If you would like any of your information corrected or removed please contact us via [support@Zi.iS](mailto:support@Zi.iS).

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffc229" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#ffc229" />
+    <meta name="theme-color" content="#ffc229" />
+    <meta name="description" content="Control Hue lights and groups from Android home screen shortcuts, app widgets, and a quick settings tile." />
+    <meta property="og:image:width" content="279" />
+    <meta property="og:image:height" content="279" />
+    <meta property="og:description" content="Control Hue lights and groups from Android home screen shortcuts, app widgets, and a quick settings tile." />
+    <meta property="og:title" content="Hue Widgets" />
+    <meta property="og:url" content="https://huewidgets.zi.is/" />
+    <meta property="og:image" content="https://huewidgets.zi.is/og-image.jpg" />
+    <title>Hue Widgets</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/"><img src="/ic_launcher-web.png" alt="Hue Widgets" /></a></h1>
+      <nav>
+        <ul>
+        {%- for href, title in [
+          ['/instructions/', 'Instructions'],
+          ['/privacy/', 'Privacy'],
+          ['https://github.com/ZiiS/HueWidgets/issues', 'Issues'],
+        ] %}
+          <li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href }}">{{ title }}</a></li>
+        {%- endfor %}
+        </ul>
+      </nav>
+    </header>
+    <main>
+    {% block body %}{% endblock %}
+    </main>
+    <footer>
+      <a href="https://zi.is/"><img src="/ziis.svg" alt="Zi.iS"/></a>
+    </footer>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hue Widgets",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "https://schema.org/HomeApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "USD"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "http://zi.is/",
+  "logo": "https://zi.is/ziis.png"
+}
+    </script>
+  </body>
+</html>
